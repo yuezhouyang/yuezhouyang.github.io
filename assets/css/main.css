@@ -204,9 +204,8 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #3c3b3b;
-		font-family: "Times", "Raleway", Helvetica, sans-serif;
+		font-family: Times,sans-serif;
 		font-weight: 800;
-		letter-spacing: 0.25em;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
 		
@@ -231,7 +230,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		letter-spacing: 0.1em;
 	}
 
