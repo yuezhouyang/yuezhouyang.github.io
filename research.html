@@ -107,7 +107,50 @@
             margin: 0;
             padding: 0;
         }
+	 /* General styles for sections */
+        section {
+            padding: 40px 20px;
+        }
 
+        /* Styling for individual sections */
+        .section-1 {
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .section-2 {
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .section-3 {
+            background-color: #e0e0e0;
+            text-align: center;
+        }
+        
+        .section-4 {
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        /* Heading styling */
+        section h2 {
+            margin: 0 0 20px;
+            font-size: 2em;
+        }
+
+        /* Add spacing between sections */
+        section + section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1 -->
+    <section class="section-1">
+<head>
+	    <style>
         .container {
             display: flex;
             align-items: left;
@@ -158,6 +201,29 @@ Global China, Global South, Africa</p>
     </div>
 
 </body>
+	    </section>
+
+	<!-- Section 2 -->
+    <section class="section-2">
+        <h2>Section 2</h2>
+        <p>This is the content of the second section. Use different styles or layouts here.</p>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="section-3">
+        <h2>Section 3</h2>
+        <p>This is the content of the third section. Customize it as needed.</p>
+    </section>
+    
+    <!-- Section 4 -->
+    <section class="section-2">
+        <h2>Section 4</h2>
+        <p>This is the content of the second section. Use different styles or layouts here.</p>
+    </section>
+
+</body>
+
+	    
 								
 							</article>
 					</html>
