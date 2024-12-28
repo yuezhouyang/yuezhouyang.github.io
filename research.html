@@ -116,7 +116,12 @@
 		margin-bottom: 50px;
         }
 	 /* General styles for sections */
-        section {
+        .container {
+            display: flex;
+            flex-direction: column; /* Aligns sections vertically */
+            align-items: stretch;   /* Ensures sections take up full width */
+        }
+	    section {
             padding: 40px 20px;
         }
 
@@ -155,6 +160,7 @@
 </head>
 <body>
 
+	<div class="container">
     <!-- Section 1 -->
     <section class="section-1">
 <head>
@@ -316,7 +322,7 @@ Global China, Global South, Africa</p>
 	    
 	    
     </section>
-
+	</div>
 </body>
 
 	    
