@@ -348,18 +348,19 @@
         }
 
         .image-item {
-            text-align: LEFT;
+            text-align: left;
         }
 
         .image-item h3 {
-            margin: 0 0 10px;
-            font-size: 1.2rem;
+            margin: 0 0 20px;
+            font-size: 1rem;
             color: #333;
         }
 
         .image-item a img {
-            width: 100%;
-            max-width: 600px;
+            width: 600px; /* Fixed width */
+            max-height: 400px; /* Fixed height */
+            object-fit: cover; /* Ensures the image scales to fit the container */
             border-radius: 8px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -372,7 +373,7 @@
 </head>
 <body>
 
-    <h22 style="text-align: left;">Graduate Teaching Assistant at London School of Economics</h22>
+    <h22 style="text-align: left;">Graduate Teaching Assistant at London School of Economics<br></h22>
 
     <div class="image-grid">
         <!-- Image 1 -->
