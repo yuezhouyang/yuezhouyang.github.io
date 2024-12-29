@@ -97,7 +97,47 @@
 
 						<!-- Post -->
 							<article class="post">
-								
+								<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* Wrapper for image and text */
+        .image-container {
+            position: relative; /* Establish a positioning context */
+            display: inline-block; /* Wrap the image and text tightly */
+        }
+
+        /* The image itself */
+        .image-container img {
+            display: block; /* Ensures no extra space below the image */
+            max-width: 100%; /* Responsive image */
+            height: auto;
+        }
+
+        /* Text overlay */
+        .image-container .text {
+            position: absolute; /* Position relative to the container */
+            top: 50%; /* Move down 50% of the container's height */
+            left: 50%; /* Move right 50% of the container's width */
+            transform: translate(-50%, -50%); /* Center text exactly */
+            color: black; /* Text color */
+            font-size: 24px; /* Text size */
+            font-weight: bold; /* Make text bold */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+            text-align: center; /* Aligns multi-line text */
+            letter-spacing: 0.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="images/library_pic.jpg" alt="Sample Image">
+        <div class="text">Teaching</div>
+    </div>
+
+</body>
 								</article>
 
 						
