@@ -100,7 +100,69 @@
 								<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+ <style>
+        body {
+            font-family: Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+	    h22 {
+            font-size: 1.5em; /* 2 × 20px (parent size) = 40px */
+            color: #3c3b3b;
+            font-family: "Times New Roman", serif;
+            font-weight: 800;
+            line-height: 1.2;
+		margin-bottom: 50px;
+        }
+	 /* General styles for sections */
+        .container-2 {
+            display: flex;
+            flex-direction: column; /* Aligns sections vertically */
+            align-items: stretch;   /* Ensures sections take up full width */
+        }
+	    section {
+            padding: 40px 20px;
+        }
+
+        /* Styling for individual sections */
+        .section-1 {
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .section-2 {
+            background-color: #fffafa;
+            text-align: center;
+        }
+
+        .section-3 {
+            background-color: #ffffff;
+            text-align: center;
+        }
+        
+        .section-4 {
+            background-color: #fffafa;
+            text-align: center;
+        }
+
+        /* Heading styling */
+        section h2 {
+            margin: 0 0 20px;
+            font-size: 2em;
+        }
+
+        /* Add spacing between sections */
+        section + section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+		<body>
+
+	<div class="container-2">
+    <!-- Section 1 -->
+    <section class="section-1">
+<head>							
     <style>
         /* Wrapper for image and text */
         .image-container {
@@ -113,6 +175,7 @@
             display: block; /* Ensures no extra space below the image */
             max-width: 100%; /* Responsive image */
             height: auto;
+            opacity: 0.8; /* Makes the image slightly transparent */
         }
 
         /* Text overlay */
@@ -122,9 +185,13 @@
             left: 50%; /* Move right 50% of the container's width */
             transform: translate(-50%, -50%); /* Center text exactly */
             color: black; /* Text color */
-            font-size: 24px; /* Text size */
+            font-size: 2.2em; /* Text size */
+            font-family: Times, sans-serif;
             font-weight: bold; /* Make text bold */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+            text-shadow: 2px 2px 0 white,  /* Right and down shadow */
+                -2px 2px 0 white, /* Left and down shadow */
+                2px -2px 0 white, /* Right and up shadow */
+                -2px -2px 0 white; /* Left and up shadow */ /* Shadow for readability */
             text-align: center; /* Aligns multi-line text */
             letter-spacing: 0.2em;
         }
@@ -138,6 +205,19 @@
     </div>
 
 </body>
+	    </section>
+		<!-- Section 2 -->
+    <section class="section-2">
+	    </section>
+
+    <!-- Section 3 -->
+    <section class="section-3">
+	    </section>
+    
+    <!-- Section 4 -->
+    <section class="section-2">
+	    </section>
+	    
 								</article>
 
 						
