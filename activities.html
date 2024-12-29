@@ -338,6 +338,77 @@
 
     <!-- Section 3 -->
     <section class="section-3">
+	     <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two images per row */
+            gap: 20px; /* Space between grid items */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .image-item {
+            text-align: LEFT;
+        }
+
+        .image-item h3 {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .image-item a img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-item a img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h22 style="text-align: left;">Graduate Teaching Assistant at London School of Economics</h22>
+
+    <div class="image-grid">
+        <!-- Image 1 -->
+        <div class="image-item">
+            <h3>International Political Economy and Development</h3>
+            <a href="https://www.lse.ac.uk/resources/calendar2023-2024/courseGuides/PP/2023_PP448.htm" target="_blank">
+                <img src="images/class1_pic.jpeg" alt="Image 1">
+            </a>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="image-item">
+            <h3>Power and Politics in the Modern World: Comparative Perspectives</h3>
+            <a href="https://www.lse.ac.uk/resources/calendar2022-2023/courseGuides/GV/2022_GV248.htm" target="_blank">
+                <img src="images/class2_pic.jpg" alt="Image 2">
+            </a>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="image-item">
+            <h3>Development in the International Political Economy</h3>
+            <a href="https://www.lse.ac.uk/study-at-lse/summer-schools/summer-school/courses/international-relations/ir207" target="_blank">
+                <img src="images/class3_pic.jpg" alt="Image 3">
+            </a>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="image-item">
+            <h3>African Political Economy</h3>
+            <a href="https://www.lse.ac.uk/resources/calendar2023-2024/courseGuides/GV/2023_GV335.htm" target="_blank">
+                <img src="images/class4_pic.jpg" alt="Image 4">
+            </a>
+        </div>
+    </div>
+
+</body>
 	    </section>
     
     <!-- Section 4 -->
