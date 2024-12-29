@@ -208,6 +208,128 @@
 	    </section>
 		<!-- Section 2 -->
     <section class="section-2">
+	     <style>
+     
+        .container {
+            display: flex;
+            justify-content: space-between; /* Space between text box and slideshow */
+            align-items: center; /* Vertically align items */
+            padding: 20px;
+            gap: 20px; /* Space between the elements */
+        }
+
+        /* Text Box Styling */
+        .text-box {
+            flex: 0.5; /* Allows the text box to take up 1 part of the available space */
+            
+            padding: 20px;
+            border-radius: 8px;
+            
+        }
+
+        .text-box h2 {
+            margin-top: 0;
+        }
+
+        .text-box p {
+            line-height: 1.2;
+        }
+
+        /* Slideshow Styling */
+        .slideshow-container {
+            flex: 1.5; /* Allows the slideshow to take up 1 part of the available space */
+            max-width: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* Navigation Buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Text Box -->
+        <div class="text-box">
+            <h22>Guest Lecturer</h22>
+            <h3>- School of Public Policy, LSE<br>
+            - Institute for Global Public Policy, Fudan University</h3>
+        </div>
+
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <div class="slides active">
+                <img src="images/Lecturer_title.pptx" alt="Slide 1" style="width:100%">
+                
+            </div>
+            <div class="slides">
+                <img src="images/Lecturer_2.pptx" alt="Slide 2" style="width:100%">
+                
+            </div>
+            <div class="slides">
+                <img src="images/Lecturer_3.pptx" alt="Slide 3" style="width:100%">
+                
+            </div>
+
+            <!-- Navigation -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slides");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Automatic slideshow
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000); // 5 seconds interval
+    </script>
+
+</body>
 	    </section>
 
     <!-- Section 3 -->
