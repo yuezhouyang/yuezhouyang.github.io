@@ -128,6 +128,16 @@ University of Oxford</div>
 
 									<!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<style>
+  /* Make the booking popup solid white */
+  iframe[src*="calendar.google.com"] {
+    background-color: #ffffff !important;
+    color-scheme: light;
+  }
+  div:has(> iframe[src*="calendar.google.com"]) {
+    background-color: #ffffff !important;
+  }
+</style>									
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 <script>
 (function() {
@@ -135,7 +145,6 @@ University of Oxford</div>
   window.addEventListener('load', function() {
     calendar.schedulingButton.load({
       url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3gmkP1YsmKIqTrMhJtz-juiWHhzfnnbZrDS05HX8InNussBsN961l6ZPlEfk6UlzA8NeUnIj4u?gv=true',
-      background-color: #ffffff !important;
 	  color: '#f0e4c5',
       label: "Office Hours Booking",
       target,
